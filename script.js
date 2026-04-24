@@ -1,46 +1,33 @@
-// Mobile menu toggle
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-if (menuBtn && navLinks) {
-  menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
+window.addEventListener("scroll", () => {
+  let current = "home";
 
-  document.querySelectorAll(".nav-links a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("show");
-    });
-  });
-}
+  document.querySelectorAll("section[id]").forEach((section) => {
+    const sectionTop = section.offsetTop - 130;
 
-// Scroll reveal animation
-const revealElements = document.querySelectorAll(".reveal");
-
-function revealOnScroll() {
-  revealElements.forEach((el) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
-    const revealPoint = 120;
-
-    if (elementTop < windowHeight - revealPoint) {
-      el.classList.add("active");
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute("id");
     }
   });
-}
 
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
 
-// Interactive hover glow (premium effect)
-document.querySelectorAll(".skill-card, .project-card").forEach((card) => {
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
+
+document.querySelectorAll(".card, .about-cards article").forEach((card) => {
   card.addEventListener("mousemove", (e) => {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
     card.style.background = `
-      radial-gradient(circle at ${x}px ${y}px, rgba(56, 189, 248, 0.18), rgba(255,255,255,0.075) 40%)
+      radial-gradient(circle at ${x}px ${y}px, rgba(139, 92, 246, 0.20), rgba(13, 18, 37, 0.9) 42%)
     `;
   });
 
