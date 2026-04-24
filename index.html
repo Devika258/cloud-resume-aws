@@ -1,99 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devika | Cloud & IT Support Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devika | Cloud Engineer</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <nav>
-    <h2>Devika</h2>
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>Devika</h2>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Devika</h1>
-      <h3>Cloud-Focused IT Support Engineer</h3>
-      <p>
-        IT infrastructure support professional with experience in incident management,
-        monitoring, troubleshooting, and hands-on AWS cloud projects.
-      </p>
-      <div class="buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-    </div>
-  </header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+    <h1>Cloud & Infrastructure Engineer</h1>
+    <p>
+      Experienced in production support, cloud monitoring, and AWS-based automation.
+      Focused on building secure, reliable, and scalable cloud systems.
+    </p>
 
-  <section id="about" class="card fade-in">
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
     <h2>About Me</h2>
     <p>
-      Early-career IT infrastructure support professional with experience in incident management,
-      production monitoring, and troubleshooting. Currently developing cloud skills through
-      hands-on AWS projects and Microsoft Azure certifications.
+      Cloud and infrastructure engineer with nearly 2 years of experience in production support,
+      handling incidents, monitoring systems, and ensuring uptime across cloud and on-prem environments.
+      Currently pursuing an MSc in Cloud Computing with hands-on experience in AWS including IAM, Lambda,
+      CloudTrail, and CloudWatch. Skilled in automation using Python (Boto3) to improve system security and efficiency.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section id="skills" class="card fade-in">
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+  <div class="container">
     <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <span>AWS S3</span>
-      <span>CloudFront</span>
-      <span>IAM</span>
-      <span>Azure Fundamentals</span>
-      <span>Windows Server</span>
-      <span>Active Directory</span>
-      <span>Incident Management</span>
-      <span>GitHub</span>
-      <span>Basic CI/CD</span>
-    </div>
-  </section>
 
-  <section id="projects" class="card fade-in">
+    <div class="grid">
+      <div class="card">AWS (S3, IAM, Lambda, CloudTrail)</div>
+      <div class="card">CloudWatch & Monitoring</div>
+      <div class="card">Python (Boto3)</div>
+      <div class="card">Active Directory</div>
+      <div class="card">Windows Server & Linux</div>
+      <div class="card">Microsoft 365 & Intune</div>
+      <div class="card">Incident Management</div>
+      <div class="card">GitHub & CI/CD Basics</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
     <h2>Projects</h2>
 
-    <div class="project-card">
-      <h3>Cloud Resume Website</h3>
+    <div class="project">
+      <h3>IAM Policy Analyzer (AWS Serverless Project)</h3>
       <p>
-        Built and deployed a professional resume website using AWS S3 and CloudFront.
-        Configured public access, CDN delivery, and version control through GitHub.
+        Designed and implemented a serverless AWS solution to analyze IAM policies and identify
+        over-permissioned access using CloudTrail logs.
       </p>
       <ul>
-        <li>Hosted static website using AWS S3</li>
-        <li>Configured CloudFront for secure global content delivery</li>
-        <li>Used IAM and bucket policies for access control</li>
-        <li>Tracked project changes using Git and GitHub</li>
+        <li>Built using AWS Lambda, S3, Athena, and Glue</li>
+        <li>Automated IAM auditing using Python (Boto3)</li>
+        <li>Reduced unnecessary permissions by ~60%</li>
+        <li>Visualized insights using Amazon QuickSight</li>
       </ul>
-      <p class="tech">AWS S3 | CloudFront | IAM | GitHub | HTML | CSS</p>
     </div>
-  </section>
 
-  <section class="card fade-in">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Microsoft Azure Fundamentals AZ-900</li>
-      <li>AWS Cloud Practitioner - In Progress</li>
-    </ul>
-  </section>
+    <div class="project">
+      <h3>Cloud Resume Website</h3>
+      <p>
+        Built and deployed a static portfolio website using AWS S3 and CloudFront for global content delivery.
+      </p>
+      <ul>
+        <li>S3 static hosting and CloudFront CDN setup</li>
+        <li>Configured IAM for secure access</li>
+        <li>Optimized caching and performance</li>
+      </ul>
+    </div>
 
-  <section id="contact" class="card fade-in">
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section dark">
+  <div class="container">
+    <h2>Experience</h2>
+
+    <div class="project">
+      <h3>Associate I – Cloud Infrastructure Services</h3>
+      <ul>
+        <li>Resolved 20–30 weekly production incidents across cloud and on-prem environments</li>
+        <li>Monitored infrastructure using logging and alerting tools</li>
+        <li>Managed Active Directory and Microsoft 365 user lifecycle</li>
+        <li>Collaborated with L2/L3 teams to improve system reliability</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
     <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: your-linkedin-url</p>
-    <p>GitHub: your-github-url</p>
-  </section>
+    <p>Email: devikasr21@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/devika-sr</p>
+    <p>GitHub: github.com/Devika258</p>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 Devika | Cloud Portfolio</p>
-  </footer>
+<footer>
+  <p>© 2026 Devika</p>
+</footer>
 
 </body>
 </html>
