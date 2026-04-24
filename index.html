@@ -3,151 +3,223 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devika | Cloud & Infrastructure Engineer</title>
+
+  <title>Devika S R | Cloud & Infrastructure Portfolio</title>
+  <meta name="description" content="Portfolio of Devika S R - Cloud, Infrastructure, AWS and DevOps-focused engineer." />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
-<nav class="navbar">
-  <div class="logo">Devika<span>.</span></div>
-  <button class="menu-btn" id="menuBtn">☰</button>
-  <div class="nav-links" id="navLinks">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<section class="hero">
-  <div class="hero-text reveal">
-    <p class="tag">Cloud • Infrastructure • Automation</p>
-    <h1>Building reliable cloud systems with security and automation in mind.</h1>
-    <p class="intro">
-      Cloud & Infrastructure Engineer with production support experience,
-      AWS automation projects, and a strong focus on secure, scalable systems.
-    </p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
-      <a href="#contact" class="btn secondary">Get in Touch</a>
-    </div>
+  <div class="site-bg">
+    <span class="glow glow-one"></span>
+    <span class="glow glow-two"></span>
+    <span class="grid-overlay"></span>
   </div>
 
-  <div class="hero-card reveal">
-    <h3>Current Focus</h3>
-    <p>AWS automation, IAM security, monitoring, and cloud reliability.</p>
-    <div class="stat-box">
-      <div><strong>2 yrs</strong><span>Infrastructure Support</span></div>
-      <div><strong>20–30</strong><span>Weekly Incidents</span></div>
-      <div><strong>AWS</strong><span>Hands-on Projects</span></div>
-    </div>
-  </div>
-</section>
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <img src="assets/logo.svg" alt="Devika S R logo" />
+      <span>Devika<span class="accent">.</span></span>
+    </a>
 
-<section id="about" class="section reveal">
-  <p class="section-label">About Me</p>
-  <h2>Cloud-focused engineer with real production support experience.</h2>
-  <p>
-    I have nearly 2 years of experience supporting infrastructure environments,
-    resolving incidents, monitoring systems, and maintaining service reliability.
-    I am currently pursuing an MSc in Cloud Computing and building hands-on AWS
-    projects using services such as IAM, S3, Lambda, CloudTrail, CloudWatch,
-    Athena, Glue, and QuickSight.
-  </p>
-</section>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
 
-<section id="skills" class="section dark reveal">
-  <p class="section-label">Technical Skills</p>
-  <h2>Tools and technologies I work with</h2>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav-pill">Contact</a>
+    </nav>
+  </header>
 
-  <div class="skills-grid">
-    <div class="skill-card">AWS S3</div>
-    <div class="skill-card">CloudFront</div>
-    <div class="skill-card">IAM</div>
-    <div class="skill-card">Lambda</div>
-    <div class="skill-card">CloudTrail</div>
-    <div class="skill-card">CloudWatch</div>
-    <div class="skill-card">Python Boto3</div>
-    <div class="skill-card">Active Directory</div>
-    <div class="skill-card">Microsoft 365</div>
-    <div class="skill-card">Windows Server</div>
-    <div class="skill-card">Linux</div>
-    <div class="skill-card">GitHub</div>
-  </div>
-</section>
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="section-label">Cloud • Infrastructure • Automation</p>
 
-<section id="projects" class="section reveal">
-  <p class="section-label">Featured Projects</p>
-  <h2>Cloud projects that demonstrate practical engineering skills.</h2>
+        <h1>Building reliable cloud systems with security and automation in mind.</h1>
 
-  <div class="project-grid">
-    <div class="project-card">
-      <span class="project-number">01</span>
-      <h3>IAM Policy Analyzer</h3>
-      <p>
-        Serverless AWS solution to analyse IAM policies and identify
-        over-permissioned access using CloudTrail logs.
-      </p>
-      <ul>
-        <li>Built with Lambda, S3, Athena, and Glue</li>
-        <li>Automated auditing using Python Boto3</li>
-        <li>Applied least-privilege recommendations</li>
-        <li>Visualised insights using QuickSight</li>
-      </ul>
-      <p class="tech">AWS Lambda • IAM • Athena • Glue • Boto3</p>
-    </div>
+        <p class="intro">
+          Cloud-focused IT infrastructure support professional with nearly 2 years of production support experience,
+          hands-on AWS projects, and a growing focus on cloud reliability, IAM security, monitoring, and automation.
+        </p>
 
-    <div class="project-card">
-      <span class="project-number">02</span>
-      <h3>Cloud Resume Website</h3>
-      <p>
-        Portfolio website hosted on AWS S3 and delivered globally using
-        CloudFront CDN.
-      </p>
-      <ul>
-        <li>Configured S3 static website hosting</li>
-        <li>Added CloudFront for HTTPS and performance</li>
-        <li>Used bucket policies and access control</li>
-        <li>Tracked changes using GitHub</li>
-      </ul>
-      <p class="tech">AWS S3 • CloudFront • IAM • GitHub</p>
-    </div>
-  </div>
-</section>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Get in Touch</a>
+        </div>
 
-<section id="experience" class="section dark reveal">
-  <p class="section-label">Experience</p>
-  <h2>Production support background with cloud and infrastructure exposure.</h2>
+        <div class="trust-row">
+          <div>
+            <strong>2 yrs</strong>
+            <span>Infrastructure Support</span>
+          </div>
+          <div>
+            <strong>20–30</strong>
+            <span>Weekly Incidents</span>
+          </div>
+          <div>
+            <strong>AWS</strong>
+            <span>Hands-on Projects</span>
+          </div>
+        </div>
+      </div>
 
-  <div class="timeline-card">
-    <h3>Associate I – Cloud Infrastructure Services</h3>
-    <p class="date">Apr 2023 – Jan 2025</p>
-    <ul>
-      <li>Resolved 20–30 weekly production incidents across cloud and on-prem environments.</li>
-      <li>Monitored infrastructure using logging and alerting tools.</li>
-      <li>Administered Microsoft 365 and Active Directory user lifecycle tasks.</li>
-      <li>Collaborated with L2/L3 teams to improve system stability and uptime.</li>
-    </ul>
-  </div>
-</section>
+      <div class="hero-visual reveal">
+        <img class="cloud-illustration" src="assets/cloud-architecture.svg" alt="Cloud architecture illustration" />
 
-<section id="contact" class="contact reveal">
-  <p class="section-label">Contact</p>
-  <h2>Let’s connect</h2>
-  <p>I’m open to Cloud, Infrastructure, IT Support, and Junior DevOps opportunities.</p>
+        <div class="floating-card card-a">
+          <span>☁️</span>
+          <p>AWS Cloud</p>
+        </div>
 
-  <div class="contact-links">
-    <a href="mailto:devikasr21@gmail.com">Email</a>
-    <a href="https://linkedin.com/in/devika-sr" target="_blank">LinkedIn</a>
-    <a href="https://github.com/Devika258" target="_blank">GitHub</a>
-  </div>
-</section>
+        <div class="floating-card card-b">
+          <span>🛡️</span>
+          <p>IAM Security</p>
+        </div>
 
-<footer>
-  <p>© 2026 Devika Sivanjali Rajesh</p>
-</footer>
+        <div class="floating-card card-c">
+          <span>⚙️</span>
+          <p>CI/CD Basics</p>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section id="about" class="section about reveal">
+      <div>
+        <p class="section-label">About Me</p>
+        <h2>Cloud-focused engineer with real production support experience.</h2>
+      </div>
+
+      <div class="about-card">
+        <p>
+          I have nearly 2 years of experience supporting infrastructure environments, resolving incidents,
+          monitoring systems, and maintaining service reliability. I am currently pursuing an MSc in Cloud Computing
+          and building hands-on AWS projects using services such as IAM, S3, Lambda, CloudTrail, Athena, Glue,
+          and deployment automation.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <p class="section-label">Technical Skills</p>
+      <h2>Tools and technologies I work with</h2>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <img src="assets/aws.svg" alt="AWS cloud icon" />
+          <h3>AWS</h3>
+          <p>S3, CloudFront, IAM, Lambda, CloudTrail, Athena, Glue</p>
+        </article>
+
+        <article class="skill-card">
+          <img src="assets/server.svg" alt="Server infrastructure icon" />
+          <h3>Infrastructure</h3>
+          <p>Active Directory, Microsoft 365, Windows Server, Linux basics</p>
+        </article>
+
+        <article class="skill-card">
+          <img src="assets/monitoring.svg" alt="Monitoring icon" />
+          <h3>Support & Monitoring</h3>
+          <p>Incident handling, alert monitoring, escalation, troubleshooting</p>
+        </article>
+
+        <article class="skill-card">
+          <img src="assets/devops.svg" alt="DevOps icon" />
+          <h3>DevOps Basics</h3>
+          <p>GitHub, GitHub Actions, CI/CD concepts, Python Boto3</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <p class="section-label">Featured Projects</p>
+      <h2>Cloud projects that demonstrate practical engineering skills.</h2>
+
+      <div class="project-grid">
+        <article class="project-card large">
+          <div class="project-media">
+            <img src="assets/security-dashboard.svg" alt="IAM security dashboard illustration" />
+          </div>
+
+          <div class="project-content">
+            <span class="project-number">01</span>
+            <h3>IAM Policy Analyzer</h3>
+            <p>
+              Serverless AWS solution to analyse IAM policies and identify over-permissioned access using CloudTrail logs.
+            </p>
+            <ul>
+              <li>Built with Lambda, S3, Athena, and Glue</li>
+              <li>Automated auditing using Python Boto3</li>
+              <li>Applied least-privilege recommendations</li>
+              <li>Visualised insights using dashboard-style reporting</li>
+            </ul>
+            <p class="tech">AWS Lambda • IAM • Athena • Glue • Boto3</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media small">
+            <img src="assets/resume-site.svg" alt="Cloud resume website illustration" />
+          </div>
+
+          <div class="project-content">
+            <span class="project-number">02</span>
+            <h3>Cloud Resume Website</h3>
+            <p>
+              Portfolio website hosted on AWS S3 and delivered globally using CloudFront CDN.
+            </p>
+            <ul>
+              <li>Configured S3 static website hosting</li>
+              <li>Added CloudFront for HTTPS and performance</li>
+              <li>Tracked changes using GitHub</li>
+              <li>Automated deployment with GitHub Actions</li>
+            </ul>
+            <p class="tech">AWS S3 • CloudFront • IAM • GitHub Actions</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <p class="section-label">Experience</p>
+      <h2>Production support background with cloud and infrastructure exposure.</h2>
+
+      <article class="timeline-card">
+        <div class="timeline-icon">01</div>
+        <div>
+          <h3>Associate I – Cloud Infrastructure Services</h3>
+          <p class="date">Apr 2023 – Jan 2025</p>
+          <ul>
+            <li>Resolved 20–30 weekly production incidents across cloud and on-prem environments.</li>
+            <li>Monitored infrastructure using logging and alerting tools.</li>
+            <li>Administered Microsoft 365 and Active Directory user lifecycle tasks.</li>
+            <li>Collaborated with L2/L3 teams to improve system stability and uptime.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <p class="section-label">Contact</p>
+      <h2>Let’s connect</h2>
+      <p>I’m open to Cloud, Infrastructure, IT Support, and Junior DevOps opportunities.</p>
+
+      <div class="contact-links">
+        <a href="mailto:devikasr21@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/devika-s-r" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Devika258/cloud-resume-aws" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Devika Sivanjali Rajesh. Built on AWS.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
