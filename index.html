@@ -3,17 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devika - Cloud & IT Support Portfolio</title>
+  <title>Devika | Cloud & IT Support Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Devika</h1>
-    <p>Cloud-Focused IT Support Engineer</p>
+  <nav>
+    <h2>Devika</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Devika</h1>
+      <h3>Cloud-Focused IT Support Engineer</h3>
+      <p>
+        IT infrastructure support professional with experience in incident management,
+        monitoring, troubleshooting, and hands-on AWS cloud projects.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
   </header>
 
-  <section>
+  <section id="about" class="card fade-in">
     <h2>About Me</h2>
     <p>
       Early-career IT infrastructure support professional with experience in incident management,
@@ -22,31 +42,41 @@
     </p>
   </section>
 
-  <section>
+  <section id="skills" class="card fade-in">
     <h2>Technical Skills</h2>
-    <ul>
-      <li>AWS: S3 (Static Hosting), IAM (Access Control), CloudFront (In Progress)</li>
-      <li>Microsoft Azure Fundamentals</li>
-      <li>Windows Server & Active Directory</li>
-      <li>Incident Management & Monitoring</li>
-      <li>GitHub & Basic CI/CD</li>
-      <li>CloudFront (CDN, Static Website Delivery)</li>
-    </ul>
+    <div class="skills-grid">
+      <span>AWS S3</span>
+      <span>CloudFront</span>
+      <span>IAM</span>
+      <span>Azure Fundamentals</span>
+      <span>Windows Server</span>
+      <span>Active Directory</span>
+      <span>Incident Management</span>
+      <span>GitHub</span>
+      <span>Basic CI/CD</span>
+    </div>
   </section>
 
-  <section>
-  <h2>Projects</h2>
+  <section id="projects" class="card fade-in">
+    <h2>Projects</h2>
 
-  <h3>Cloud Resume Website (AWS)</h3>
-  <ul>
-    <li>Built and deployed a static resume website using AWS S3</li>
-    <li>Configured CloudFront CDN for global content delivery</li>
-    <li>Implemented secure access using IAM roles and policies</li>
-    <li>Integrated GitHub for version control and CI/CD deployment</li>
-  </ul>
+    <div class="project-card">
+      <h3>Cloud Resume Website</h3>
+      <p>
+        Built and deployed a professional resume website using AWS S3 and CloudFront.
+        Configured public access, CDN delivery, and version control through GitHub.
+      </p>
+      <ul>
+        <li>Hosted static website using AWS S3</li>
+        <li>Configured CloudFront for secure global content delivery</li>
+        <li>Used IAM and bucket policies for access control</li>
+        <li>Tracked project changes using Git and GitHub</li>
+      </ul>
+      <p class="tech">AWS S3 | CloudFront | IAM | GitHub | HTML | CSS</p>
+    </div>
   </section>
 
-  <section>
+  <section class="card fade-in">
     <h2>Certifications</h2>
     <ul>
       <li>Microsoft Azure Fundamentals AZ-900</li>
@@ -54,12 +84,16 @@
     </ul>
   </section>
 
-  <section>
+  <section id="contact" class="card fade-in">
     <h2>Contact</h2>
     <p>Email: your-email@example.com</p>
     <p>LinkedIn: your-linkedin-url</p>
     <p>GitHub: your-github-url</p>
   </section>
+
+  <footer>
+    <p>© 2026 Devika | Cloud Portfolio</p>
+  </footer>
 
 </body>
 </html>
