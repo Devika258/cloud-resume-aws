@@ -35,3 +35,27 @@ document.querySelectorAll(".card, .about-cards article").forEach((card) => {
     card.style.background = "";
   });
 });
+
+// ================= Visitor Counter =================
+
+const VISITOR_API_URL = "https://lc4974ybqd.execute-api.eu-west-2.amazonaws.com/visitors";
+
+async function updateVisitorCounter() {
+  const counterElement = document.getElementById("visitor-count");
+
+  if (!counterElement) return;
+
+  try {
+    const response = await fetch(VISITOR_API_URL);
+    const data = await response.json();
+
+    counterElement.textContent = data.visitor_count;
+  } catch (error) {
+    console.error("Visitor counter error:", error);
+    counterElement.textContent = "unavailable";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateVisitorCounter();
+});
