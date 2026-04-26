@@ -1,25 +1,86 @@
-# Cloud Resume Website with CI/CD
+# 🌐 Cloud Resume Website with CI/CD
 
-This is my cloud resume project hosted on AWS.
+This project is a fully cloud-native portfolio website built on AWS using Infrastructure as Code and CI/CD automation.
 
-## Tools Used
+🔗 **Live Site:** https://d2ngjx00rtoziz.cloudfront.net  
+
+---
+
+## 🚀 Architecture Overview
+
+- Static website hosted on **Amazon S3**
+- Delivered globally via **Amazon CloudFront (CDN)**
+- Visitor counter powered by:
+  - **AWS Lambda**
+  - **API Gateway**
+  - **DynamoDB**
+- Infrastructure provisioned using **Terraform**
+- Automated deployment using **GitHub Actions**
+
+---
+
+## 🛠️ Tech Stack
 
 - AWS S3
 - AWS CloudFront
-- IAM
-- GitHub
+- AWS Lambda
+- AWS API Gateway
+- AWS DynamoDB
+- Terraform
 - GitHub Actions
-- HTML
-- CSS
+- HTML, CSS, JavaScript
 
-## Project Goal
+---
 
-The goal of this project is to build and deploy a static resume website using AWS services and automate deployment using GitHub Actions.
+## ⚙️ Features
 
-## What I Learned
+- Responsive portfolio website
+- Dynamic visitor counter (serverless backend)
+- CI/CD pipeline for automatic deployment
+- Infrastructure as Code using Terraform
+- Secure and scalable cloud architecture
 
-- Hosting a static website on AWS S3
-- Using CloudFront for content delivery
-- Using GitHub for version control
-- Creating a basic CI/CD pipeline
-- Applying IAM permissions for secure deployment
+---
+
+## 🔄 CI/CD Pipeline
+
+Every push to the `main` branch:
+
+1. Uploads website files to S3
+2. Invalidates CloudFront cache
+3. Deploys latest version automatically
+
+---
+
+## 🧠 What I Learned
+
+- Building serverless applications on AWS
+- Automating deployments with GitHub Actions
+- Managing infrastructure with Terraform
+- Implementing remote state with S3 and DynamoDB
+- Using CloudFront for global content delivery
+
+---
+
+## 📸 Screenshots
+
+(Add your portfolio screenshot here later)
+
+---
+
+## 👩‍💻 Author
+
+**Devika S R**  
+Cloud & DevOps Enthusiast  
+
+- LinkedIn: https://www.linkedin.com/in/devika-s-r  
+- GitHub: https://github.com/Devika258  
+
+---
+
+## ⭐ Future Improvements
+
+- Custom domain integration
+- HTTPS with ACM
+- Monitoring with CloudWatch
+- Add more AWS projects
