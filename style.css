@@ -404,18 +404,32 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  width: fit-content;
-  margin-top: 18px;
-  padding: 11px 18px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 800;
+  margin-top: 16px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
   text-decoration: none;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--purple), var(--blue));
-  box-shadow: 0 14px 34px rgba(47, 140, 255, 0.22);
-  transition: 0.3s ease;
+  box-shadow: 0 12px 30px rgba(47, 140, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(139, 92, 246, 0.35);
+}
+
+/* 👉 ADD IT RIGHT HERE */
+.card a.project-btn {
+  color: white !important;
+}
+
+/* Hover effect */
+.project-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(139, 92, 246, 0.35);
 }
 
 .project-btn:hover {
