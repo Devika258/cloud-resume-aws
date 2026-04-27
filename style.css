@@ -393,6 +393,34 @@ h1 {
   transition: 0.28s;
 }
 
+/* PROJECT BUTTON */
+.project-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, var(--purple), var(--blue));
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+}
+
+/* Make cards feel clickable */
+.card {
+  cursor: pointer;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
 .about-cards article:hover,
 .card:hover {
   transform: translateY(-8px);
