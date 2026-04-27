@@ -393,34 +393,6 @@ h1 {
   transition: 0.28s;
 }
 
-/* PROJECT BUTTON */
-.project-btn {
-  display: inline-block;
-  margin-top: 14px;
-  padding: 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
-  background: linear-gradient(135deg, var(--purple), var(--blue));
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.project-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
-}
-
-/* Make cards feel clickable */
-.card {
-  cursor: pointer;
-}
-
-.card p {
-  margin-bottom: 12px;
-}
-
 .about-cards article:hover,
 .card:hover {
   transform: translateY(-8px);
@@ -614,5 +586,94 @@ footer {
   .social-row img {
   width: 18px;
   height: 18px;
+  }
+}
+
+/* PREMIUM PROJECT CARDS */
+#projects .grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+#projects .card {
+  min-height: 330px;
+  padding: 30px;
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#projects .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.18),
+    transparent 38%,
+    rgba(47, 140, 255, 0.12)
+  );
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+#projects .card:hover::before {
+  opacity: 1;
+}
+
+#projects .card h3,
+#projects .card p,
+#projects .project-btn {
+  position: relative;
+  z-index: 1;
+}
+
+#projects .card h3 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+#projects .card p {
+  margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+#projects .project-btn {
+  width: fit-content;
+  margin-top: 24px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, var(--purple), var(--blue));
+  box-shadow: 0 12px 30px rgba(47, 140, 255, 0.22);
+}
+
+#projects .project-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(47, 140, 255, 0.35);
+}
+
+/* RESPONSIVE PROJECT CARDS */
+@media (max-width: 1200px) {
+  #projects .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  #projects .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #projects .card {
+    min-height: auto;
   }
 }

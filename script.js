@@ -59,3 +59,18 @@ async function updateVisitorCounter() {
 document.addEventListener("DOMContentLoaded", () => {
   updateVisitorCounter();
 });
+
+const menuBtn = document.getElementById("menu-btn");
+const navMenu = document.querySelector(".nav-links");
+
+if (menuBtn && navMenu) {
+  menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+}
+
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("open");
+  });
+});
