@@ -451,11 +451,6 @@ h1 {
   color: white !important;
 }
 
-.project-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 42px rgba(139, 92, 246, 0.35);
-}
-
 .card {
   cursor: default;
 }
@@ -687,12 +682,18 @@ footer {
   line-height: 1 !important;
 }
 
-/* FINAL PROJECT 2x2 LAYOUT */
+/* FINAL PROJECTS LAYOUT */
+#projects {
+  padding: 84px 7%;
+}
+
 #projects .grid {
-  width: min(100%, 980px) !important;
+  width: 100% !important;
+  max-width: none !important;
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 32px !important;
+  gap: 28px !important;
+  margin-top: 40px !important;
 }
 
 #projects .card {
@@ -702,19 +703,6 @@ footer {
 
 @media (max-width: 768px) {
   #projects .grid {
-    width: 100% !important;
     grid-template-columns: 1fr !important;
   }
-}
-
-/* CENTER PROJECT SECTION WIDTH */
-#projects {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-#projects .grid {
-  width: 100% !important;
-  max-width: none !important;
-  grid-template-columns: repeat(2, 1fr) !important;
 }
