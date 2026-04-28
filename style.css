@@ -494,11 +494,12 @@ h1 {
   border-bottom: 1px solid var(--border);
 }
 
-.grid {
-  margin-top: 28px;
+/* PROJECT GRID - 2x2 LAYOUT */
+#projects .grid {
+  margin-top: 32px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
 }
 
 .wide {
@@ -563,6 +564,12 @@ footer {
   .about-cards,
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #projects .grid {
+    grid-template-columns: 1fr;
   }
 }
 
