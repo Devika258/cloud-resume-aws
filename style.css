@@ -674,25 +674,23 @@ footer {
   box-shadow: 0 18px 42px rgba(139, 92, 246, 0.35);
 }
 
-/* PROJECT TAGS */
-.project-tags {
-  display: flex;
+/* FINAL PROJECT TAG OVERRIDE */
+#projects .project-tags {
+  display: flex !important;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 14px 0 10px;
+  margin: 14px 0 12px;
 }
 
-.project-tags span {
+#projects .project-tags span {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 6px 12px;
   border-radius: 999px;
-  color: var(--cyan);
-  border: 1px solid rgba(40, 215, 255, 0.25);
+  color: var(--cyan) !important;
+  border: 1px solid rgba(40, 215, 255, 0.35);
   background: rgba(40, 215, 255, 0.08);
-  transition: 0.3s;
-}
-
-.project-tags span:hover {
-  background: rgba(40, 215, 255, 0.2);
 }
