@@ -673,3 +673,26 @@ footer {
   transform: translateY(-3px);
   box-shadow: 0 18px 42px rgba(139, 92, 246, 0.35);
 }
+
+/* PROJECT TAGS */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 10px;
+}
+
+.project-tags span {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: var(--cyan);
+  border: 1px solid rgba(40, 215, 255, 0.25);
+  background: rgba(40, 215, 255, 0.08);
+  transition: 0.3s;
+}
+
+.project-tags span:hover {
+  background: rgba(40, 215, 255, 0.2);
+}
