@@ -497,9 +497,13 @@ h1 {
 /* PROJECT GRID - 2x2 LAYOUT */
 #projects .grid {
   margin-top: 32px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+}
+
+#projects .card {
+  min-height: 300px;
 }
 
 .wide {
