@@ -503,7 +503,10 @@ h1 {
 }
 
 #projects .card {
-  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
 }
 
 .wide {
@@ -705,4 +708,9 @@ footer {
   #projects .grid {
     grid-template-columns: 1fr !important;
   }
+}
+
+#projects .project-btn {
+  align-self: flex-end;
+  margin-top: auto;
 }
