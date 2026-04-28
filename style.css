@@ -681,3 +681,20 @@ footer {
   font-weight: 800 !important;
   line-height: 1 !important;
 }
+
+/* FINAL FORCE 2x2 PROJECT GRID */
+section#projects.content-section .grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 32px !important;
+}
+
+section#projects.content-section .card {
+  min-height: 300px !important;
+}
+
+@media (max-width: 768px) {
+  section#projects.content-section .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
