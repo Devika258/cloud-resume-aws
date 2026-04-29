@@ -757,7 +757,7 @@ footer {
   position: relative;
   padding-left: 28px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
 }
 
@@ -784,7 +784,9 @@ footer {
   }
 
   .experience-header h3 {
-    font-size: 22px;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 6px;
   }
 }
 
@@ -805,5 +807,23 @@ footer {
   font-size: 11px;
   font-weight: 800;
   padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* EXPERIENCE TAGS */
+.experience-tags {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experience-tags span {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cyan);
+  background: rgba(40, 215, 255, 0.1);
+  border: 1px solid rgba(40, 215, 255, 0.35);
   border-radius: 999px;
 }
