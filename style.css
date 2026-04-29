@@ -729,6 +729,82 @@ footer {
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
 }
 
+/* EDUCATION SECTION */
+.education-card {
+  margin: 32px auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 34px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(47, 140, 255, 0.18), transparent 35%),
+    var(--card);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.education-header h3 {
+  font-size: 24px;
+}
+
+.edu-date {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.edu-degree {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.education-card ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.education-card li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.education-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+
+/* TAGS */
+.education-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.education-tags span {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cyan);
+  background: rgba(40, 215, 255, 0.1);
+  border: 1px solid rgba(40, 215, 255, 0.35);
+  border-radius: 999px;
+}
+
 .experience-header {
   display: block;
   padding-bottom: 22px;
