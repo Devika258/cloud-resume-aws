@@ -717,10 +717,10 @@ footer {
 
 /* EXPERIENCE CARD */
 .experience-card {
-  margin-top: 32px;
+  margin: 32px auto 0;
   width: 100%;
-  max-width: 900px;
-  padding: 34px;
+  max-width: 1100px;
+  padding: 40px;
   border: 1px solid var(--border);
   border-radius: 22px;
   background:
@@ -826,4 +826,15 @@ footer {
   background: rgba(40, 215, 255, 0.1);
   border: 1px solid rgba(40, 215, 255, 0.35);
   border-radius: 999px;
+}
+
+#experience {
+  align-items: flex-start;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
