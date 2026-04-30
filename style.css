@@ -960,10 +960,19 @@ footer {
 }
 
 .education-logo img {
-  width: 140%;
-  height: 140%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+}
+
+/* Lincoln needs zoom */
+.logo-lincoln {
   transform: scale(1.4);
+}
+
+/* MBCET normal */
+.logo-mbcet {
+  transform: scale(1);
 }
 
 .education-logo {
