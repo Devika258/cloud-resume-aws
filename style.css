@@ -1005,3 +1005,11 @@ footer {
   background: rgba(40, 215, 255, 0.2);
   transform: translateY(-2px);
 }
+
+.experience-company {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
