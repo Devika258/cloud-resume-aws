@@ -1076,3 +1076,28 @@ footer {
   }
 
 }
+
+/* FIX CONTACT BUTTON LAYOUT ON MOBILE */
+@media (max-width: 768px) {
+  .contact-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    justify-items: center;
+    width: 100%;
+    max-width: 520px;
+    margin: 28px auto 0;
+  }
+
+  .contact-actions a {
+    width: 100%;
+    max-width: 190px;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .contact-actions a:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 190px;
+  }
+}
