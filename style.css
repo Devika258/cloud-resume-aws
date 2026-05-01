@@ -1101,3 +1101,19 @@ footer {
     max-width: 190px;
   }
 }
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.contact-actions a {
+  padding: 14px 26px;
+  min-width: 160px;
+  text-align: center;
+  justify-content: center;
+}
