@@ -1030,3 +1030,49 @@ footer {
     padding-top: 120px !important;
   }
 }
+
+/* MOBILE FIX FOR PROFILE CIRCLE + RINGS */
+@media (max-width: 768px) {
+
+  .hero-right {
+    min-height: auto;
+    padding-top: 10px;
+  }
+
+  .ring-one {
+    display: none; /* too big for mobile */
+  }
+
+  .ring-two {
+    width: 260px;
+    height: 260px;
+  }
+
+  .profile-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .dot-pattern {
+    width: 220px;
+    height: 220px;
+    top: 30px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  /* FIX BIG HALF CIRCLE (the glowing arc behind card) */
+  .hero-right::after,
+  .hero-right::before {
+    display: none;
+  }
+
+  /* FIX CARD POSITION */
+  .stats-card {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+
+}
