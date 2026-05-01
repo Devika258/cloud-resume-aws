@@ -999,3 +999,34 @@ footer {
     white-space: normal;
   }
 }
+
+/* MOBILE NAVBAR FIX */
+@media (max-width: 768px) {
+  .navbar {
+    width: calc(100% - 24px);
+    height: 76px;
+    padding: 0 18px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    border-radius: 0 0 18px 18px;
+  }
+
+  .brand {
+    justify-self: center;
+    font-size: 26px;
+  }
+
+  .brand img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .nav-links,
+  .connect-btn {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 120px !important;
+  }
+}
