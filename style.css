@@ -981,3 +981,27 @@ footer {
   flex-wrap: wrap;
   gap: 10px;
 }
+
+/* EXPERIENCE TAGS (same as education) */
+.experience-tags {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experience-tags span {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--cyan);
+  background: rgba(40, 215, 255, 0.1);
+  border: 1px solid rgba(40, 215, 255, 0.35);
+  border-radius: 999px;
+  transition: 0.25s;
+}
+
+.experience-tags span:hover {
+  background: rgba(40, 215, 255, 0.2);
+  transform: translateY(-2px);
+}
