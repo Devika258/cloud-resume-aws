@@ -729,65 +729,6 @@ footer {
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
 }
 
-/* EDUCATION SECTION */
-.education-card {
-  margin: 32px auto;
-  width: 100%;
-  max-width: 1000px;
-  padding: 34px;
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(47, 140, 255, 0.18), transparent 35%),
-    var(--card);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
-}
-
-.education-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.education-header h3 {
-  font-size: 24px;
-}
-
-.edu-date {
-  color: var(--muted);
-  font-size: 16px;
-}
-
-.edu-degree {
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-.education-card ul {
-  list-style: none;
-  display: grid;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.education-card li {
-  position: relative;
-  padding-left: 22px;
-  color: var(--muted);
-}
-
-.education-card li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--blue);
-}
-
 /* TAGS */
 .education-tags {
   display: flex;
@@ -915,56 +856,6 @@ footer {
   gap: 16px;
 }
 
-/* EDUCATION TIMELINE */
-.education-timeline {
-  position: relative;
-  max-width: 1100px;
-  margin: 40px auto 0;
-  display: grid;
-  gap: 34px;
-}
-
-.education-timeline::before {
-  content: "";
-  position: absolute;
-  left: 42px;
-  top: 35px;
-  bottom: 35px;
-  width: 2px;
-  background: linear-gradient(var(--purple), var(--blue));
-  opacity: 0.6;
-}
-
-.education-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 84px 1fr;
-  gap: 34px;
-  align-items: flex-start;
-}
-
-.education-logo {
-  position: relative;
-  z-index: 2;
-  width: 84px;
-  height: 84px;
-  padding: 10px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: white;
-  border: 3px solid rgba(139, 92, 246, 0.75);
-  box-shadow: 0 0 0 6px rgba(139, 92, 246, 0.12),
-              0 18px 45px rgba(139, 92, 246, 0.28);
-  overflow: hidden;
-}
-
-.education-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 /* Lincoln needs zoom */
 .logo-lincoln {
   transform: scale(1.4);
@@ -997,4 +888,92 @@ footer {
     radial-gradient(circle at 10% 10%, rgba(47, 140, 255, 0.16), transparent 35%),
     var(--card);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+
+/* FINAL EDUCATION STYLE */
+.education-timeline {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  display: grid;
+  gap: 32px;
+}
+
+.education-item {
+  width: 100%;
+}
+
+.education-logo {
+  display: none;
+}
+
+.education-item::after,
+.education-timeline::before {
+  display: none;
+}
+
+.education-content {
+  padding: 40px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(139, 92, 246, 0.18), transparent 35%),
+    var(--card);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+
+.education-header {
+  display: block;
+  padding-bottom: 22px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--border);
+}
+
+.education-header h3 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.education-header span,
+.edu-date {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.edu-degree {
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.education-content ul {
+  list-style: none;
+  display: grid;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.education-content li {
+  position: relative;
+  padding-left: 32px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.education-content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--purple);
+  box-shadow: 0 0 18px var(--purple);
+}
+
+.education-tags {
+  margin-top: 6px;
 }
