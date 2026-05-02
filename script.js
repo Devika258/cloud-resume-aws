@@ -1,9 +1,12 @@
+// ================= Active Navbar Highlight =================
+
+const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
   let current = "home";
 
-  document.querySelectorAll("section[id]").forEach((section) => {
+  sections.forEach((section) => {
     const sectionTop = section.offsetTop - 130;
 
     if (window.scrollY >= sectionTop) {
@@ -19,6 +22,8 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// ================= Card Glow Effect =================
 
 document.querySelectorAll(".card, .about-cards article").forEach((card) => {
   card.addEventListener("mousemove", (e) => {
@@ -60,6 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
   updateVisitorCounter();
 });
 
+// ================= Mobile Menu =================
+
 const menuBtn = document.getElementById("menu-btn");
 const navMenu = document.querySelector(".nav-links");
 
@@ -67,31 +74,10 @@ if (menuBtn && navMenu) {
   menuBtn.addEventListener("click", () => {
     navMenu.classList.toggle("open");
   });
+
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+    });
+  });
 }
-
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("open");
-  });
-});
-
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 120;
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
-});
