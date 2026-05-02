@@ -1156,6 +1156,7 @@ footer {
 }
 
 .cert-tags {
+  margin-top: 6px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -1175,4 +1176,33 @@ footer {
   .cert-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* CERTIFICATION BUTTON (LinkedIn style) */
+.cert-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 14px 0 18px;
+  padding: 8px 16px;
+
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: transparent;
+
+  transition: 0.25s ease;
+}
+
+/* Hover effect */
+.cert-btn:hover {
+  box-shadow: 0 0 20px rgba(40, 215, 255, 0.3);
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(40, 215, 255, 0.08);
+  transform: translateY(-2px);
 }
