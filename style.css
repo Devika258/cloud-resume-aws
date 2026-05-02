@@ -1311,3 +1311,11 @@ footer {
     justify-self: center;
   }
 }
+
+.card,
+.about-cards article,
+.cert-card,
+.education-content,
+.experience-card {
+  background: var(--card);
+}

@@ -25,21 +25,23 @@ window.addEventListener("scroll", () => {
 
 // ================= Card Glow Effect =================
 
-document.querySelectorAll(".card, .about-cards article").forEach((card) => {
-  card.addEventListener("mousemove", (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+document
+  .querySelectorAll(".card, .about-cards article, .cert-card, .education-content, .experience-card")
+  .forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
 
-    card.style.background = `
-      radial-gradient(circle at ${x}px ${y}px, rgba(139, 92, 246, 0.20), rgba(13, 18, 37, 0.9) 42%)
-    `;
-  });
+      card.style.background = `
+        radial-gradient(circle at ${x}px ${y}px, rgba(139, 92, 246, 0.28), rgba(13, 18, 37, 0.92) 42%)
+      `;
+    });
 
-  card.addEventListener("mouseleave", () => {
-    card.style.background = "";
+    card.addEventListener("mouseleave", () => {
+      card.style.background = "";
+    });
   });
-});
 
 // ================= Visitor Counter =================
 
