@@ -1206,3 +1206,79 @@ footer {
   background: rgba(40, 215, 255, 0.08);
   transform: translateY(-2px);
 }
+
+/* FINAL MOBILE POLISH */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    top: 0;
+    width: calc(100% - 22px);
+    height: 74px;
+    padding: 0 18px;
+  }
+
+  .brand {
+    font-size: 24px;
+    gap: 12px;
+  }
+
+  .brand img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .hero {
+    padding-top: 115px !important;
+    padding-bottom: 45px !important;
+  }
+
+  .hero-text {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .hero-buttons {
+    gap: 16px;
+  }
+
+  .primary-btn,
+  .outline-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 260px;
+    margin: 28px auto 0;
+  }
+
+  .contact-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* CERTIFICATION LOGOS */
+.cert-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  background: white;
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* PROJECT IMPACT TEXT */
+.project-impact {
+  margin-top: 12px;
+  color: var(--cyan) !important;
+  font-size: 15px;
+  font-weight: 700;
+}
