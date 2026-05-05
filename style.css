@@ -1323,60 +1323,89 @@ footer {
 /* FINAL MOBILE HERO ALIGNMENT FIX */
 @media (max-width: 768px) {
   .hero {
+    display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    padding: 115px 6% 50px !important;
+    padding: 115px 6% 55px !important;
+    gap: 34px !important;
   }
 
   .hero-left {
     width: 100%;
-    text-align: center !important;
-  }
-
-  .hero-text {
-    margin: 0 auto;
+    order: 1 !important;
   }
 
   .hero-buttons {
     justify-content: center !important;
     width: 100%;
-    margin-top: 26px;
+    margin-top: 26px !important;
   }
 
   .social-row {
     width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
     justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important;
     margin-top: 28px !important;
-    gap: 16px;
   }
 
   .social-row p {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 6px;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .social-row a {
+    margin: 0 6px !important;
+  }
+
+  .social-row {
+    flex-wrap: wrap;
   }
 
   .hero-right {
+    order: 2 !important;
     width: 100%;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center !important;
-    justify-content: center;
-    padding-top: 20px !important;
+    min-height: 520px !important;
+    display: grid !important;
+    place-items: center !important;
+    position: relative !important;
+    padding-top: 0 !important;
   }
 
   .ring-two {
-    position: absolute;
+    position: absolute !important;
+    top: 38px !important;
     left: 50% !important;
+    width: 300px !important;
+    height: 300px !important;
     transform: translateX(-50%) !important;
   }
 
   .profile-circle {
-    margin: 0 auto !important;
+    position: absolute !important;
+    top: 58px !important;
+    left: 50% !important;
+    width: 245px !important;
+    height: 245px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .dot-pattern {
+    top: 20px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
   }
 
   .stats-card {
-    margin: 28px auto 0 !important;
-    max-width: 340px;
+    position: absolute !important;
+    top: 330px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: min(94%, 360px) !important;
+    margin: 0 !important;
   }
 }
