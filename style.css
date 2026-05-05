@@ -1345,30 +1345,28 @@ footer {
   .social-row {
     width: 100%;
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
     gap: 14px !important;
     margin-top: 28px !important;
+    flex-wrap: nowrap !important;
   }
 
   .social-row p {
-    margin: 0 !important;
-    text-align: center !important;
+    margin: 0 8px 0 0 !important;
+    white-space: nowrap !important;
   }
 
   .social-row a {
-    margin: 0 6px !important;
-  }
-
-  .social-row {
-    flex-wrap: wrap;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
   }
 
   .hero-right {
     order: 2 !important;
     width: 100%;
-    min-height: 520px !important;
+    min-height: 560px !important;
     display: grid !important;
     place-items: center !important;
     position: relative !important;
@@ -1377,10 +1375,10 @@ footer {
 
   .ring-two {
     position: absolute !important;
-    top: 38px !important;
+    top: 30px !important;
     left: 50% !important;
-    width: 300px !important;
-    height: 300px !important;
+    width: 340px !important;
+    height: 340px !important;
     transform: translateX(-50%) !important;
   }
 
@@ -1388,24 +1386,26 @@ footer {
     position: absolute !important;
     top: 58px !important;
     left: 50% !important;
-    width: 245px !important;
-    height: 245px !important;
+    width: 285px !important;
+    height: 285px !important;
     transform: translateX(-50%) !important;
   }
 
   .dot-pattern {
-    top: 20px !important;
+    top: 14px !important;
     left: 50% !important;
     right: auto !important;
+    width: 280px !important;
+    height: 280px !important;
     transform: translateX(-50%) !important;
   }
 
   .stats-card {
     position: absolute !important;
-    top: 330px !important;
+    top: 380px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    width: min(94%, 360px) !important;
+    width: min(94%, 380px) !important;
     margin: 0 !important;
   }
 }
