@@ -1221,9 +1221,14 @@ footer {
 /* PROJECT IMPACT TEXT */
 .project-impact {
   margin-top: 12px;
-  color: var(--cyan) !important;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
+  color: var(--muted) !important;
+}
+
+.project-impact strong {
+  color: var(--cyan) !important;
+  font-weight: 800;
 }
 
 /* FINAL NAVBAR + CONTACT FIX */
